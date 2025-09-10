@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Krishna Kunal — Portfolio</title>
+  <!-- these are for search engine purposes -->
+  <meta name="description" content="Personal portfolio of Krishna Kunal — ECE undergrad at IIT (ISM) Dhanbad. Web development, problem solving, and projects." />
+  <meta property="og:title" content="Krishna Kunal — Portfolio" />
+  <meta property="og:description" content="ECE @ IIT (ISM) Dhanbad | Web dev & problem solving" />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0ea5e9" />
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"> -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary">
+      <a class="logo" href="#home">KK</a>
+      <!-- aria label is here for screen reader purposes -->
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">☰</button>
+      <ul id="nav-menu" class="nav-menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">🌙</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section id="home" class="hero container">
+      <div class="hero-text">
+        <p class="eyebrow">Hello, I’m</p>
+        <h1>Krishna Kunal</h1>
+        <p class="subtitle">ECE undergrad @ IIT (ISM) Dhanbad • Aspiring Web Developer</p>
+        <div class="hero-cta">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn" href="assets/New_resume.pdf" download>Download Résumé</a>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <img src="assets/avatar.jpg" alt="profile photo" />
+      </div>
+    </section>
+
+    <section id="about" class="section container">
+      <h2>About</h2>
+      <p>
+        I’m a pre-final year Electronics and Communication Engineering student at 
+        <strong>IIT (ISM) Dhanbad</strong> (CGPA: 8.65/10). I enjoy transforming ideas into simple, fast, and
+         accessible web experiences.Currently, I’m strengthening my fundamentals in HTML, CSS, and JavaScript
+         while improving problem-solving skills through Data Structures and Algorithms (DSA). 
+      </p>
+    </section>
+
+    <section id="skills" class="section container">
+      <h2>Skills</h2>
+      <ul class="chip-list" aria-label="Skills">
+        <li class="chip">HTML5</li>
+        <li class="chip">CSS3</li>
+        <li class="chip">JavaScript</li>
+        <li class="chip">C</li>
+        <li class="chip">C++</li>
+        <li class="chip">Matlab</li>
+        <li class="chip">GitHub</li>
+        <li class="chip">VS Code</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="section container">
+      <h2>Projects</h2>
+      <div class="grid">
+        <article class="card">
+          <div class="card-body">
+            <h3>Personal Portfolio Website</h3>
+            <p>A responsive, accessible portfolio built with semantic HTML, modern CSS, and a sprinkle of JS. Includes dark mode, smooth scrolling, and mobile nav.</p>
+            <ul class="meta">
+              <li>Stack: HTML, CSS, JavaScript</li>
+              <li>Status: <span class="status done">Completed</span></li>
+            </ul>
+            <div class="card-actions">
+              <a class="btn small" href="#" onclick="alert('Hook this to your GitHub repo once you publish!'); return false;">Live</a>
+              <a class="btn small" href="#" onclick="alert('Hook this to your GitHub repo once you publish!'); return false;">Code</a>
+            </div>
+          </div>
+        </article>
+        <article class="card muted">
+          <div class="card-body">
+            <h3>Taskify (placeholder)</h3>
+            <p>Coming soon. A task manager with authentication and real-time updates.</p>
+            <ul class="meta"><li>Stack: React, Node.js, MongoDB</li></ul>
+          </div>
+        </article>
+        <article class="card muted">
+          <div class="card-body">
+            <h3>DevBlog (placeholder)</h3>
+            <p>Coming soon. A blog with markdown editing and Firebase auth.</p>
+            <ul class="meta"><li>Stack: Next.js, Firebase, Tailwind CSS</li></ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="achievements" class="section container">
+      <h2>Achievements</h2>
+      <ul class="timeline">
+        <li><strong>JEE Mains</strong> — All India Rank (AIR) 4934</li>
+        <li><strong>JEE Advanced</strong> — All India Rank (AIR) 5675</li>
+        <li><strong>KVPY</strong> — All India Rank (AIR) 1557</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="section container">
+      <h2>Contact</h2>
+      <div class="contact-grid">
+        <div>
+          <p><strong>Email:</strong> <a href="mailto:krishnakunal2005@gmail.com">krishnakunal2005@gmail.com</a></p>
+          <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/krishna-kunal01/" target="_blank" rel="noopener">/in/krishna-kunal01</a></p>
+          <p><strong>GitHub:</strong> <a href="https://github.com/kkunal01" target="_blank" rel="noopener">@kkunal01</a></p>
+        </div>
+        <form class="contact-form" action="mailto:krishnakunal2005@gmail.com" method="post" enctype="text/plain">
+          <label for="name">Name</label>
+          <input id="name" name="name" required />
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required />
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+          <button class="btn primary" type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container small">
+      <p>© <span id="year"></span> Krishna Kunal. Built with ❤️ using HTML, CSS & JS.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
